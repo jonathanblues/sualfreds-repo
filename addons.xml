@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?> 
+<addons> 
+<addon id="plugin.audio.prime_music" name="Amazon Prime Music" version="0.7.1" provider-name="piet"> 
+    <requires> 
+        <import addon="xbmc.python" version="2.1.0"/> 
+        <import addon="script.module.mechanize" version="0.2.6"/> 
+        <import addon="script.module.beautifulsoup" version="3.2.1"/> 
+    </requires> 
+    <extension point="xbmc.python.pluginsource" library="default.py"> 
+        <provides>audio</provides> 
+    </extension> 
+    <extension point="xbmc.addon.metadata"> 
+        <platform>all</platform> 
+        <summary lang="en">Amazon Prime Music Add-on (DE)</summary> 
+        <language></language> 
+        <description lang="en">Amazon Prime Music Add-on (DE)</description> 
+        <disclaimer lang="en">Some parts of this addon may not be legal in your country of residence - please check with your local laws before installing.</disclaimer> 
+        <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license> 
+        <source>https://github.com/</source> 
+        <forum>http://www.kodinerds.net</forum> 
+        <website>http://www.amazon.de</website> 
+    </extension> 
+</addon> 
+<addon id="plugin.audio.tuneinradio" name="TuneIn Radio" version="3.0.0" provider-name="brianhornsby"> 
+	<requires> 
+		<import addon="xbmc.python" version="2.1.0"/> 
+		<import addon="script.module.simplejson" version="2.0.10"/> 
+	</requires> 
+	<extension point="xbmc.python.pluginsource" library="default.py"> 
+		<provides>audio</provides> 
+	</extension> 
+	<extension point="xbmc.addon.metadata"> 
+		<platform>all</platform> 
+		<summary lang="bg">Радио TuneIn</summary> 
+		<summary lang="en">TuneIn Radio</summary> 
+		<summary lang="es">TuneIn Radio</summary> 
+		<description lang="bg">Радио TuneIn е безплатна услуга, която ви позволява да слушате всичко, независимо къде се намирате. Каквото желаете - музика, спорт или новини. Радио TuneIn предлага над 50 000 станции от които да избирате. Можете да намерите местните станции или да откриете нови станции от целия свят. Радио TuneIn ви отвежда точно където желаете да сте.</description> 
+		<description lang="en">TuneIn Radio is a free service that lets you listen to anything in the world from wherever you are. Whether you want to hear music, sports, news or current events. TuneIn Radio offers over 50,000 stations for you to choose from. From finding local stations to discovering new stations from around the world, TuneIn Radio brings you to where you want to be.</description> 
+		<description lang="es">TuneIn Radio es un servicio gratuito que te permite escuchar cualquier cosa del mundo desde donde te encuentres. Si deseas escuchar música, deportes, noticias o eventos actuales. TuneIn Radio ofrece más de 50,000 estaciones radiales para escoger, desde estaciones locales hasta descubrir nuevas estaciones alrededor del mundo, TuneIn Radio te lleva a donde tu quieras estar.</description> 
+		<language></language> 
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license> 
+		<forum>http://forum.kodi.tv/showthread.php?tid=119315</forum> 
+		<website>http://brianhornsby.com/kodi_addons/tuneinradio</website> 
+		<source>https://github.com/brianhornsby/plugin.audio.tuneinradio</source> 
+	</extension> 
+</addon> 
+<addon id="plugin.get.cast" version="0.0.1" name="Get Cast Plugin" provider-name="sualfred"> 
+	<requires> 
+		<import addon="xbmc.json" version="7.9.0"/> 
+		<import addon="xbmc.python" version="2.25.0"/> 
+		<import addon="script.module.simplejson" version="3.3.0"/> 
+	</requires> 
+	<extension point="xbmc.python.pluginsource" library="plugin.py"> 
+	</extension> 
+	<extension point="xbmc.addon.metadata"> 
+		<summary lang="en">Deliveres the cast of a database item</summary> 
+		<description lang="en" /> 
+		<disclaimer lang="en" /> 
+		<platform>all</platform> 
+		<language /> 
+		<license>GNU GENERAL PUBLIC LICENSE Version 2, June 1991</license> 
+		<forum /> 
+		<website /> 
+		<email /> 
+		<source></source> 
+		<assets> 
+			<icon>resources/icon.png</icon> 
+			<fanart>resources/fanart.jpg</fanart> 
+		</assets> 
+	</extension> 
+</addon> 
+<addon id="repository.beta.emby.kodi" name="Kodi Emby Beta Addons" version="1.0.5" provider-name="marcelveldt,angelblue05,im85288,xnappo,null_pointer"> 
+	<requires> 
+		<import addon="xbmc.addon" version="12.0.0"/> 
+	</requires> 
+	<extension point="xbmc.addon.repository" name="Kodi Emby Beta Addons Repository"> 
+		<info compressed="false">http://embydata.com/downloads/addons/xbmb3c/kodi-beta-repo/addons.xml</info> 
+		<checksum>http://embydata.com/downloads/addons/xbmb3c/kodi-beta-repo/addons.xml.md5</checksum> 
+		<datadir zip="true">http://embydata.com/downloads/addons/xbmb3c/kodi-beta-repo/</datadir> 
+	</extension> 
+	<extension point="xbmc.addon.metadata"> 
+		<summary>Kodi Emby Addon Repository</summary> 
+		<description>This repo contains the Kodi Emby addon along with compatible Kodi skins</description> 
+		<disclaimer></disclaimer> 
+		<platform>all</platform> 
+	</extension> 
+</addon> 
+<addon id="repository.fredsrepo" name="Sualfreds Repo" version="1.0.5" provider-name="sualfred"> 
+	<extension point="xbmc.addon.repository" name="Sualfreds Repository"> 
+		<info compressed="false">https://raw.githubusercontent.com/sualfred/sualfreds-repo/master/addons.xml</info> 
+		<checksum>https://raw.githubusercontent.com/sualfred/sualfreds-repo/master/addons.xml.md5</checksum> 
+		<datadir zip="true">https://raw.githubusercontent.com/sualfred/sualfreds-repo/master/</datadir> 
+	</extension> 
+	<extension point="xbmc.addon.metadata"> 
+		<summary>Sualfreds Repo for his noob Kodi things</summary> 
+		<description></description> 
+		<disclaimer></disclaimer> 
+		<platform>all</platform> 
+	</extension> 
+</addon> 
+<addon id="repository.kodinerds" name="kodinerds.net Add-ons" version="6.0.0" provider-name="L0RE"> 
+	<extension point="xbmc.addon.repository" name="L0RE"> 
+		<info compressed="true">https://raw.githubusercontent.com/kodinerds/repo/master/addons.xml</info> 
+		<checksum>https://raw.githubusercontent.com/kodinerds/repo/master/addons.xml.md5</checksum> 
+		<datadir zip="true">https://raw.githubusercontent.com/kodinerds/repo/master/</datadir> 
+	</extension> 
+	<extension point="xbmc.addon.metadata"> 
+		<summary lang="en">Official Repository of Kodinerds</summary> 
+		<summary lang="de">Offizielles Repository der Kodinerds</summary> 
+		<description lang="en">This is the official Repository of the german Community 'Kodinerds' which you'll find at www.kodinerds.net. Most of the hosted Addons are supported by the members of the Community. Enjoy</description> 
+		<description lang="de">Das ist das offizielle Repository der deutschen Community 'Kodinerds', welche Du unter www.kodinerds.net findest. Die meisten der hier gehosteten Addons werden von den Mitgliedern der Community aktiv supported. Viel Spaß</description> 
+		<disclaimer></disclaimer> 
+		<platform>all</platform> 
+	</extension> 
+</addon> 
+<addon id="repository.marcelveldt" version="1.0.1" name="Marcelveldt's BETA repository" provider-name="marcelveldt"> 
+ECHO ist ausgeschaltet (OFF).
+	<extension point="xbmc.addon.repository" name="Marcelveldt's BETA repository"> 
+		<info compressed="false">https://raw.githubusercontent.com/marcelveldt/repository.marcelveldt/master/addons.xml</info> 
+		<checksum>https://raw.githubusercontent.com/marcelveldt/repository.marcelveldt/master/addons.xml.md5</checksum> 
+		<datadir zip="true">https://raw.githubusercontent.com/marcelveldt/repository.marcelveldt/master/</datadir> 
+	</extension> 
+	<extension point="xbmc.addon.metadata"> 
+		<summary lang="en">Kodi repository for beta/test versions of Marcelveldt's addons</summary> 
+		<description lang="en">Kodi repository for beta/test versions of Marcelveldt's addons, for stable versions please just use the official Kodi repository. This repo is for test/beta versions of my work only</description> 
+		<platform>all</platform> 
+	</extension> 
+</addon> 
+<addon id="repository.sandmann79.plugins" name="Sandmann79s Repository" version="1.0.2" provider-name="Sandmann79"> 
+	<extension point="xbmc.addon.repository" name="Sandmann79s Repository"> 
+		<info compressed="false">https://raw.githubusercontent.com/Sandmann79/xbmc/master/packages/addons.xml</info> 
+		<checksum>https://raw.githubusercontent.com/Sandmann79/xbmc/master/packages/addons.xml.md5</checksum> 
+		<datadir zip="true">https://raw.githubusercontent.com/Sandmann79/xbmc/master/packages/</datadir> 
+	</extension> 
+	<extension point="xbmc.addon.metadata"> 
+		<summary>Test Repo</summary> 
+		<description></description> 
+		<disclaimer></disclaimer> 
+		<platform>all</platform> 
+	</extension> 
+</addon> 
+<addon id="resource.uisounds.embuary" version="0.0.2" name="Embuary Sounds" provider-name="sualfred"> 
+  <requires> 
+    <import addon="kodi.resource" version="1.0.0"/> 
+  </requires> 
+  <extension point="kodi.resource.uisounds"/> 
+  <extension point="kodi.addon.metadata"> 
+    <summary lang="en">Embuary Sounds</summary> 
+    <description lang="en">Embuary Sounds</description> 
+    <platform>all</platform> 
+  </extension> 
+</addon> 
+<addon id="resource.uisounds.ftv" version="1.0.0" name="fTV Sounds" provider-name="Hitcher"> 
+  <requires> 
+    <import addon="kodi.resource" version="1.0.0"/> 
+  </requires> 
+  <extension point="kodi.resource.uisounds"/> 
+  <extension point="kodi.addon.metadata"> 
+    <summary lang="en">fTV Sounds</summary> 
+    <description lang="en">fTV Sounds</description> 
+    <platform>all</platform> 
+  </extension> 
+</addon> 
+<addon id="script.module.cherrypy" 
+       name="CherryPy Kodi module" 
+       version="11.0.1" 
+       provider-name="marcelveldt, CherryPy Team"> 
+    <requires> 
+        <import addon="xbmc.python" version="2.24.0"/> 
+        <import addon="script.module.six" version="1.9.0"/> 
+    </requires> 
+    <extension point="xbmc.python.module" library="lib" /> 
+    <extension point="xbmc.addon.metadata"> 
+        <summary>CherryPy webserver packaged as Kodi module</summary> 
+        <description>CherryPy is a pythonic, object-oriented web framework 
+            CherryPy allows developers to build web applications in much the same way they would build any other object-oriented Python program. This results in smaller source code developed in less time. 
+            CherryPy is now more than ten years old and it is has proven to be very fast and stable. It is being used in production by many sites, from the simplest to the most demanding. 
+        </description> 
+        <license>BSD</license> 
+        <source>https://github.com/marcelveldt/script.module.cherrypy</source> 
+        <platform>all</platform> 
+    </extension> 
+</addon> 
+<addon id="script.module.metadatautils" 
+       name="Metadata and Artwork module" 
+       version="1.0.17" 
+       provider-name="marcelveldt"> 
+    <requires> 
+        <import addon="xbmc.python" version="2.24.0"/> 
+        <import addon="script.module.requests" version="2.3.0"/> 
+        <import addon="script.module.beautifulsoup" version="3.0.8" /> 
+        <import addon="script.module.thetvdb" version="0.0.1" /> 
+        <import addon="script.module.musicbrainz" version="0.0.1" /> 
+        <import addon="script.module.simplecache" version="1.0.0"/> 
+        <import addon="script.module.arrow" version="0.6.0"/> 
+    </requires> 
+    <extension point="xbmc.python.module" library="lib" /> 
+    <extension point="xbmc.addon.metadata"> 
+        <summary>Metadata and artwork from common sources like TMDB, IMDB, TADB and fanart.tv </summary> 
+        <description> 
+            The metadata and artwork module for Kodi provides rich metadata, including artwork for  
+            various metatypes by scraping (and caching) this information from sites like TMDB, musicbrainz and fanart.tv.[CR][CR] 
+            This product uses the TMDb API but is not endorsed or certified by TMDb 
+        </description> 
+        <license>Apache 2.0</license> 
+        <source>https://github.com/marcelveldt/script.module.metadatautils</source> 
+        <platform>all</platform> 
+    </extension> 
+</addon> 
+<addon id="script.module.musicbrainz" 
+       name="Musicbrainz NGS webservice python bindings" 
+       version="0.6.0" 
+       provider-name="marcelveldt"> 
+  <requires> 
+  <import addon="xbmc.python" version="2.24.0"/> 
+  </requires> 
+  <extension point="xbmc.python.module" 
+             library="lib" /> 
+  <extension point="xbmc.addon.metadata"> 
+    <summary>Python bindings for Musicbrainz' NGS webservice</summary> 
+    <description>Kodi module library for the Python bindings for Musicbrainz' NGS webservice developed by alastair.</description> 
+    <license>GNU GENERAL PUBLIC LICENSE Version 2</license> 
+    <source>https://github.com/marcelveldt/script.module.musicbrainz</source> 
+    <platform>all</platform> 
+  </extension> 
+</addon> 
+<addon id="script.module.simplecache" name="Simple Cache Module" version="1.0.16" provider-name="marcelveldt"> 
+    <requires> 
+        <import addon="xbmc.python" version="2.24.0"/> 
+    </requires> 
+    <extension point="xbmc.python.module" library="lib" /> 
+    <extension point="xbmc.addon.metadata"> 
+        <summary>Provides a simple file- and memory based cache for Kodi addons</summary> 
+        <description>Provides a simple file- and memory based cache for Kodi addons</description> 
+        <license>Apache 2.0</license> 
+        <source>https://github.com/marcelveldt/script.module.simplecache</source> 
+        <platform>all</platform> 
+    </extension> 
+</addon> 
+<addon id="script.module.thetvdb" 
+       name="The TVDB API v2" 
+       version="1.0.25" 
+       provider-name="marcelveldt"> 
+    <requires> 
+        <import addon="xbmc.python" version="2.24.0"/> 
+        <import addon="script.module.requests" version="2.3.0"/> 
+        <import addon="script.module.simplejson" version="3.3.0"/> 
+        <import addon="script.module.simplecache" version="1.0.0"/> 
+        <import addon="script.module.arrow" version="0.6.0"/> 
+    </requires> 
+    <extension point="xbmc.python.module" library="lib" /> 
+    <extension point="xbmc.addon.metadata"> 
+        <summary>TheTVDB API v2 python module for Kodi</summary> 
+        <description>TheTVDB API v2 python module for Kodi</description> 
+        <license>Apache 2.0</license> 
+        <source>https://github.com/marcelveldt/script.module.thetvdb</source> 
+        <platform>all</platform> 
+    </extension> 
+</addon> 
+<addon id="script.screensaver.fTVscreensaver" name="fTV Screensaver" version="0.1.3" provider-name="Sualfred"> 
+    <requires> 
+        <import addon="xbmc.python" version="2.1.0"/> 
+    </requires>     
+    <extension point="xbmc.ui.screensaver" library="screensaver.py" /> 
+    <extension point="xbmc.addon.metadata"> 
+        <platform>all</platform> 
+        <language/> 
+        <website></website> 
+        <source>https://github.com/sualfred/script.screensaver.ftvscreensaver</source> 
+        <forum>http://forum.kodi.tv/showthread.php?tid=255659</forum> 
+        <email>su4lfred@gmail.com</email>    
+        <summary lang="de">fTV Mosaik Screensaver</summary> 
+        <summary lang="en">fTV Mosaic Screensaver</summary>         
+        <description lang="de">Slideshow von Fanarts/Postern im fTV Style</description> 
+        <description lang="en">Poster and fanart slideshow based on the fTV style</description> 
+    </extension> 
+</addon> 
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?> 
+<addon id="script.skin.helper.backgrounds" name="Skin Helper Service Backgrounds" version="1.0.32" provider-name="marcelveldt"> 
+	<requires> 
+		<import addon="xbmc.python" version="2.13.0"/> 
+		<import addon="xbmc.addon" version="12.0.0"/> 
+		<import addon="script.module.pil" version="1.1.7"/> 
+        <import addon="script.module.simplecache" version="1.0.0"/> 
+        <import addon="script.module.metadatautils" version="1.0.0"/> 
+	</requires> 
+    <extension point="xbmc.python.library" library="default.py" /> 
+    <extension point="xbmc.service" library="service.py" start="login" /> 
+	<extension point="xbmc.addon.metadata"> 
+		<summary lang="en">Helper service for Kodi skins providing rotating backgrounds</summary> 
+        <description>Helper service for Kodi skins providing rotating backgrounds</description> 
+		<language></language> 
+		<platform>all</platform> 
+		<license>GPL v2.0</license> 
+		<forum>http://forum.kodi.tv/showthread.php?tid=235676</forum> 
+		<website></website> 
+		<source>https://github.com/marcelveldt/script.skin.helper.backgrounds</source> 
+	</extension> 
+</addon> 
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?> 
+<addon id="script.skin.helper.colorpicker" name="Skin Helper Service ColorPicker" version="1.0.12" provider-name="marcelveldt"> 
+	<requires> 
+		<import addon="xbmc.python" version="2.24.0"/> 
+		<import addon="xbmc.addon" version="12.0.0"/> 
+		<import addon="script.module.pil" version="1.1.7"/> 
+	</requires> 
+    <extension point="xbmc.python.library" library="default.py" /> 
+	<extension point="xbmc.addon.metadata"> 
+		<summary lang="en">Colorpicker for Kodi Skins. Part of Skin Helper Suite</summary> 
+        <description>Colorpicker for Kodi Skins. Part of Skin Helper Suite</description> 
+		<language></language> 
+		<platform>all</platform> 
+		<license>GPL v2.0</license> 
+		<forum>http://forum.kodi.tv/showthread.php?tid=235676</forum> 
+		<website></website> 
+		<source>https://github.com/marcelveldt/script.skin.helper.colorpicker</source> 
+	</extension> 
+</addon> 
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?> 
+<addon id="script.skin.helper.service" name="Skin Helper Service" version="1.1.23" provider-name="marcelveldt"> 
+	<requires> 
+		<import addon="xbmc.python" version="2.13.0"/> 
+		<import addon="xbmc.addon" version="12.0.0"/> 
+        <import addon="script.module.simplejson" version="3.3.0"/> 
+        <import addon="script.module.simplecache" version="1.0.0"/> 
+        <import addon="script.module.metadatautils" version="1.0.0"/> 
+        <import addon="script.module.cherrypy" version="11.0.0"/> 
+	</requires> 
+    <extension point="kodi.context.item"> 
+        <menu id="kodi.core.main"> 
+            <item library="resources\lib\context_animatedart.py"> 
+              <label>32024</label> 
+              <visible>IsEmpty(Window(Home).Property(SkinHelper.EnableAnimatedPosters)) + Container.Content(movies)</visible> 
+            </item> 
+            <item library="resources\lib\context_pvr.py"> 
+                <label>32023</label> 
+                <description>PVR artwork Configuration</description> 
+                <visible> 
+                    IsEmpty(Window(Home).Property(SkinHelper.EnablePvrThumbs)) +  
+                    [Window.IsActive(MyPVRChannels.xml) |  
+                    Window.IsActive(MyPVRGuide.xml) | Window.IsActive(MyPVRRecordings.xml) |  
+                    Window.IsActive(MyPVRTimers.xml) | Window.IsActive(MyPVRSearch.xml)] 
+                </visible> 
+            </item> 
+            <item library="resources\lib\context_music.py"> 
+                <label>32023</label> 
+                <description>Music artwork Configuration</description> 
+                <visible> 
+                    IsEmpty(Window(Home).Property(SkinHelper.EnableMusicArt)) +  
+                    [Container.Content(albums) | Container.Content(artists) | Container.Content(songs)] 
+                </visible> 
+            </item> 
+        </menu> 
+	</extension> 
+    <extension point="xbmc.python.library" library="default.py" /> 
+	<extension point="xbmc.python.pluginsource" library="plugin.py"> 
+    </extension> 
+	<extension library="service.py" point="xbmc.service" start="login" /> 
+	<extension point="xbmc.addon.metadata"> 
+		<summary lang="en">Helper service for Kodi skins</summary> 
+        <description>Helper service for Kodi skins</description> 
+		<language></language> 
+		<platform>all</platform> 
+		<license>GPL v2.0</license> 
+		<forum>http://forum.kodi.tv/showthread.php?tid=235676</forum> 
+		<website></website> 
+		<source>https://github.com/marcelveldt/script.skin.helper.service</source> 
+	</extension> 
+</addon> 
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?> 
+<addon id="script.skin.helper.skinbackup" name="Skin Helper Service Skin Backup" version="1.0.19" provider-name="marcelveldt"> 
+	<requires> 
+		<import addon="xbmc.python" version="2.13.0"/> 
+		<import addon="xbmc.addon" version="12.0.0"/> 
+	</requires> 
+    <extension point="xbmc.python.script" library="default.py" /> 
+	<extension library="service.py" point="xbmc.service" start="login" /> 
+	<extension point="xbmc.addon.metadata"> 
+		<summary lang="en">Helper service for Kodi skins</summary> 
+        <description>Helper service for Kodi skins</description> 
+		<language></language> 
+		<platform>all</platform> 
+		<license>GPL v2.0</license> 
+		<forum>http://forum.kodi.tv/showthread.php?tid=235676</forum> 
+		<website></website> 
+		<source>https://github.com/marcelveldt/script.skin.helper.skinbackup</source> 
+	</extension> 
+</addon> 
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?> 
+<addon id="script.skin.helper.widgets" name="Skin Helper Service Widgets" version="1.0.35" provider-name="marcelveldt"> 
+	<requires> 
+		<import addon="xbmc.python" version="2.24.0"/> 
+		<import addon="xbmc.addon" version="12.0.0"/> 
+        <import addon="script.module.metadatautils" version="1.0.0" /> 
+        <import addon="script.module.simplecache" version="1.0.0"/> 
+	</requires> 
+	<extension point="xbmc.python.pluginsource" library="plugin.py"> 
+        <provides>video audio</provides> 
+    </extension> 
+    <extension library="service.py" point="xbmc.service" start="login" /> 
+	<extension point="xbmc.addon.metadata"> 
+		<summary lang="en">Ready to use widgets for all kind of media types</summary> 
+        <description></description> 
+		<language></language> 
+		<platform>all</platform> 
+		<license>GPL v2.0</license> 
+		<forum>http://forum.kodi.tv/showthread.php?tid=235676</forum> 
+		<website></website> 
+		<source>https://github.com/marcelveldt/script.skin.helper.widgets</source> 
+	</extension> 
+</addon> 
+<addon id="script.skinshortcuts" name="Skin Shortcuts" version="1.0.18" provider-name="BigNoid,marcelveldt"> 
+	<requires> 
+		<import addon="xbmc.python" version="2.20.0"/> 
+		<import addon="script.module.simplejson" version="3.3.0"/> 
+		<import addon="script.module.unidecode" version="0.4.14"/> 
+	</requires> 
+	<extension point="xbmc.python.library" library="default.py"/> 
+	<extension point="xbmc.addon.metadata"> 
+		<news>Template improvements and bug fixes</news> 
+		<description lang="bg">Добавка за облици, която осигурява просто управление и списък с потребителски преки пътища (изисква поддръжка от облика)</description> 
+		<description lang="de">Add-on für Skins für einfache Bearbeitung und Auflistung von benutzerdefinierten Verknüpfungen (erfordert Skin-Unterstützung)</description> 
+		<description lang="el">Πρόσθετο για κελύφη, το οποίο παρέχει έναν απλό τρόπο διαχείρισης και κατηγοριοποίησης των συντομεύσεων του χρήστη (πρέπει να υποστηρίζεται από το κέλυφος)</description> 
+		<description lang="en">Add-on for skins to provide simple managing and listing of user shortcuts (requires skin support)</description> 
+		<description lang="en_NZ">Add-on for skins to provide simple managing and listing of user shortcuts (requires skin support)</description> 
+		<description lang="en_US">Add-on for skins to provide simple managing and listing of user shortcuts (requires skin support)</description> 
+		<description lang="es">Complemento para las pieles para proporcionar una gestión sencilla y lista de atajos de usuario (requiere que la piel lo soporte)</description> 
+		<description lang="fr_CA">Addiciel pour habillages qui fournit une gestion simple et un listage des raccourcis utilisateurs (exige la prise en charge de l'habillage)</description> 
+		<description lang="gl">Complemento que fornece aos temas dunha xestión sinxela dos atallos dos usuarios (require soporte do tema)</description> 
+		<description lang="hr">Dodatak za presvlake koja omogućava jednostavno upravljanje i prikaz korisnikovih prečaca (zahtijeva podršku presvlake) </description> 
+		<description lang="hu">Felszín kiegészítő amely könnyen kezelhetővé és listázhatóvá teszi a felhasználói parancsikonokat (Felszín támogatás szükséges)</description> 
+		<description lang="is">Viðbót fyrir viðmót til að halda utan um flýtivísa og fá yfirlit yfir þá (þarfnast stuðnings frá viðmóti)</description> 
+		<description lang="it">Add-on per gli skin per consentire un facile gestione ed elenco delle scorciatoie utente (richiede che lo skin lo supporti)</description> 
+		<description lang="lt">Priedas teminėms išvaizdoms, kad jos turėtų galimybę paprastai tvarkyti ir atvaizduoti vartotojo  sukurtas nuorodas (reikalingas teminės išvaizdos palaikymas)</description> 
+		<description lang="nl">Add-on voor skins om te voorzien in het eenvoudig beheren en sorteren van gebruikers snelkoppelingen (vereist skin ondersteuning)</description> 
+		<description lang="no">Tillegg for enkel administrering og opplisting av bruker-snarveier i tema (krever støtte i tema)</description> 
+		<description lang="pl">Wtyczka dla skór, która zapewnia proste zarządzanie i tworzenie list skrótów użytkownika (wymaga wsparcia skóry)</description> 
+		<description lang="pt">Um add-on que permite que os temas tenham recursos simples para gerir e listar atalhos de utilizadores (é necessário suporte do tema)</description> 
+		<description lang="pt_BR">Add-on para que as skins possam prover gerenciamento de lista de atalhos para o menu principal (requer suporte da skin)</description> 
+		<description lang="ru">Дополнение для обложек, предоставляющее простой способ управления и список пользовательских ярлыков (требуется поддержка обложкой)</description> 
+		<description lang="sv">Skinntillägg som tillhandahåller enkel hantering och översikt av användargenvägar (om skinnet stöder det)</description> 
+		<description lang="zh">插件为皮肤提供了简单的管理和用户连接方式列表 (需要皮肤支持)</description> 
+		<language></language> 
+		<platform>all</platform> 
+		<license>GNU General Public License, v2</license> 
+		<forum>http://forum.xbmc.org/showthread.php?tid=178294</forum> 
+		<website></website> 
+		<email></email> 
+		<source>https://github.com/BigNoid/script.skinshortcuts</source> 
+	<assets> 
+		<icon>icon.png</icon> 
+		<fanart>fanart.jpg</fanart> 
+	</assets> 
+	</extension> 
+</addon> 
+<addon id="service.nextup.notification" name="Nextup Service Notification" version="1.0.37" provider-name="im85288"> 
+    <requires> 
+        <import addon="xbmc.python" version="2.20.0"/> 
+        <import addon="script.module.addon.signals" version="0.0.1"/> 
+        <import addon="script.module.requests" version="2.9.1" /> 
+        <import addon="script.module.simplejson" version="3.3.0"/> 
+    </requires> 
+    <extension library="service.py" point="xbmc.service" start="login"/> 
+    <extension point="xbmc.addon.metadata"> 
+        <summary lang="en">Provides a postplay screen or netflix style nextup pop up notification or both together</summary> 
+        <summary lang="es">El plugin provee con una notificación pop-up estilo Netflix o una pantalla tras terminar la serie... ¡O ambos</summary> 
+        <description lang="en">Provides a postplay screen or netflix style nextup pop up notification or both together</description> 
+        <description lang="es">El plugin provee con una notificación pop-up estilo Netflix o una pantalla tras terminar la serie... ¡O ambos</description> 
+        <disclaimer lang="en">This plugin is a standalone plugin.</disclaimer> 
+        <disclaimer lang="es">Este es un plugin autónomo.</disclaimer> 
+        <platform>all</platform> 
+        <language/> 
+    <assets> 
+			<icon>icon.png</icon> 
+			<screenshot>resources/screenshot-01.jpg</screenshot> 
+			<screenshot>resources/screenshot-02.jpg</screenshot> 
+			<screenshot>resources/screenshot-03.jpg</screenshot> 
+			<screenshot>resources/screenshot-04.jpg</screenshot> 
+    </assets> 
+    </extension> 
+</addon> 
+<addon id="skin.embuary" version="0.4.9a" name="Embuary" provider-name="sualfred"> 
+	<requires> 
+		<import addon="xbmc.gui" version="5.12.0"/> 
+		<import addon="script.globalsearch" version="7.0.0"/> 
+		<import addon="script.toolbox" version="1.1.1"/> 
+		<import addon="script.skin.helper.service" version="1.1.23"/> 
+		<import addon="script.skin.helper.widgets" version="1.0.35"/> 
+		<import addon="script.skin.helper.backgrounds" version="1.0.32"/> 
+		<import addon="script.skin.helper.skinbackup" version="1.0.19"/> 
+		<import addon="plugin.program.autocompletion" version="1.0.1"/> 
+		<import addon="plugin.get.cast" version="0.0.1"/> 
+		<import addon="script.skinshortcuts" version="1.0.18"/> 
+		<import addon="script.extendedinfo" version="5.6.0"/> 
+		<import addon="resource.images.weathericons.outline-hd" version="0.0.3"/> 
+	</requires> 
+	<extension point="xbmc.gui.skin" debugging="false"> 
+		<res width="1920" height="1080" aspect="16:9" default="true" folder="xml" /> 
+	</extension> 
+	<extension point="xbmc.addon.metadata"> 
+		<summary lang="de_DE">Embuary Skin von Sualfred</summary> 
+		<summary lang="en_US">Embuary skin by sualfred</summary> 
+		<summary lang="nl_NL">Embuary skin door sualfred</summary> 
+		<description lang="de_DE">Embuary ist dem Web UI von Emby nachempfunden und für Emby-For-Kodi Nutzer entwickelt worden.</description> 
+		<description lang="en_US">Embuary is based on the web UI of Emby and has been developed for Emby-For-kodi User.</description> 
+		<description lang="nl_NL">Embuary is gebaseerd op Emby's Web UI en ontwikkeld voor Emby-For-Kodi gebruikers.</description> 
+		<disclaimer lang="de_DE">Keine Maus Unterstützung. Mit der Installation des Skins erklärst du dich damit einverstanden keine verbotenen und illegalen Addons von Kodi damit zu benutzen. Ich stehe in keinerlei Verbindung zu verfübaren Builds und gebe keinen Support für diese oder andere illegalen Drittanbieter-Addons.</disclaimer> 
+		<disclaimer lang="en_US">No mouse support. With the installation of the skin you agree that you don't use it in combination with blacklisted and illegal Kodi add-ons. I'm not associated with any available build and I won't give any support to blacklisted, banned or illegal third party addons.</disclaimer> 
+		<platform>all</platform> 
+		<license>CC by-nc-nd 4.0, GNU GENERAL PUBLIC LICENSE Version 2.0</license> 
+		<forum></forum> 
+		<source>https://github.com/sualfred/skin.embuary</source> 
+		<assets> 
+			<icon>resources/icon.png</icon> 
+			<fanart>resources/fanart.jpg</fanart> 
+		</assets> 
+	</extension> 
+</addon> 
+</addons> 
