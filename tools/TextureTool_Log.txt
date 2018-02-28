@@ -1,0 +1,20 @@
+******************Program start*****************
+Current Time: 2018.02.26-18:09:43
+Running Version: 2.8.0
+RegRead: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\10.0\VC\VCRedist\x86: 1
+C:\Windows\SysWOW64\msvcp140.dll: 1
+C:\Windows\system32\msvcp140.dll: 1
+C:\Windows\SysWOW64\VCRUNTIME140.dll: 1
+C:\Windows\system32\VCRUNTIME140.dll: 1
+18:09:44: TexturePacker Version: 1.1.1.0
+18:09:44: Update function started.
+18:09:44: No update found!
+18:09:48: Compile Mode started.
+18:09:56: Directory is fine.
+18:09:56: Path to directory: D:\github\skin.embuary\temp
+18:10:02: Directory is fine.
+18:10:02: Path to output file: D:\github\skin.embuary\temp\Textures.xbt
+18:10:04: Running command:TexturePacker -input D:\github\skin.embuary\temp -output D:\github\skin.embuary\temp\Textures.xbt
+18:10:04: TexturePacker.exe running.
+18:10:09: TexturePacker.exe closed.
+******************Closed by User*****************
