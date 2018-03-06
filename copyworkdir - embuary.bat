@@ -1,5 +1,5 @@
 @echo off
-set dev=d:\github\skin.embuary
+set dev=..\skin.embuary
 set target=skin.embuary
 set htpc=\\NUCFRED\Kodi\portable_data\addons\skin.embuary
 echo. 
