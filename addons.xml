@@ -44,7 +44,7 @@
 		<source>https://github.com/brianhornsby/plugin.audio.tuneinradio</source> 
 	</extension> 
 </addon> 
-<addon id="plugin.get.cast" version="0.0.2" name="Get Cast Plugin" provider-name="sualfred"> 
+<addon id="plugin.get.cast" version="0.0.3" name="Get Cast Plugin" provider-name="sualfred"> 
 	<requires> 
 		<import addon="xbmc.json" version="7.9.0"/> 
 		<import addon="xbmc.python" version="2.25.0"/> 

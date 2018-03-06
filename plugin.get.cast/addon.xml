@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='yes'?>
-<addon id="plugin.get.cast" version="0.0.2" name="Get Cast Plugin" provider-name="sualfred">
+<addon id="plugin.get.cast" version="0.0.3" name="Get Cast Plugin" provider-name="sualfred">
 	<requires>
 		<import addon="xbmc.json" version="7.9.0"/>
 		<import addon="xbmc.python" version="2.25.0"/>

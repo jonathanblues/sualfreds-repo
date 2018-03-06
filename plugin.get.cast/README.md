@@ -8,15 +8,15 @@ Include the following in your addon.xml
 
 Script call using a DBID
 
-`<content>plugin://plugin.get.cast?mode=dbid&amp;dbtype=$INFO[ListItem.DBTYPE]&amp;dbinfo=$INFO[ListItem.DBID]</content>`
+`<content>plugin://plugin.get.cast?mode=dbid&&dbtype=$INFO[ListItem.DBTYPE]&&dbinfo=$INFO[ListItem.DBID]</content>`
 
 Script call using a movie title
 
-`<content>plugin://plugin.get.cast?mode=title&amp;dbtype=movie&amp;dbinfo=$INFO[ListItem.Label]</content>`
+`<content>plugin://plugin.get.cast?mode=title&&dbtype=movie&&dbinfo=$INFO[ListItem.Label]</content>`
 
 Script call using a TV show title
 
-`<content>plugin://plugin.get.cast?mode=title&amp;dbtype=tvshow&amp;dbinfo=$INFO[ListItem.TVShowTitle]</content>`
+`<content>plugin://plugin.get.cast?mode=title&&dbtype=tvshow&&dbinfo=$INFO[ListItem.TVShowTitle]</content>`
 
 ### Available ListItem values
 

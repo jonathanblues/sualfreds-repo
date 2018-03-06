@@ -56,7 +56,7 @@ def get_query(dbtype, dbinfo, mode):
                 method = '"VideoLibrary.GetMovies"'
             elif dbtype == "tvshow":
                 method = '"VideoLibrary.GetTVShows"'
-                json_query = xbmc.executeJSONRPC('''{"jsonrpc": "2.0", "params": { "filter": {"operator": "contains", "field": "title", "value": "%s"}, "properties": ["cast"]}, "limits": { "start" : 0, "end": 1 }, "method": %s, "id": 1 })''' % (dbinfo, method))
+                json_query = xbmc.executeJSONRPC('''{"jsonrpc": "2.0", "params": { "filter": {"operator": "is", "field": "title", "value": "%s"}, "properties": ["cast"]}, "limits": { "start" : 0, "end": 1 }, "method": %s, "id": 1 })''' % (dbinfo, method))
         else:
             if dbtype == "movie":
                 method = '"VideoLibrary.GetMovieDetails"'
