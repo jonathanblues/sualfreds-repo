@@ -1,20 +1,19 @@
 ******************Program start*****************
-Current Time: 2018.02.26-18:09:43
+Current Time: 2018.03.17-10:14:08
 Running Version: 2.8.0
 RegRead: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\10.0\VC\VCRedist\x86: 1
-C:\Windows\SysWOW64\msvcp140.dll: 1
-C:\Windows\system32\msvcp140.dll: 1
-C:\Windows\SysWOW64\VCRUNTIME140.dll: 1
-C:\Windows\system32\VCRUNTIME140.dll: 1
-18:09:44: TexturePacker Version: 1.1.1.0
-18:09:44: Update function started.
-18:09:44: No update found!
-18:09:48: Compile Mode started.
-18:09:56: Directory is fine.
-18:09:56: Path to directory: D:\github\skin.embuary\temp
-18:10:02: Directory is fine.
-18:10:02: Path to output file: D:\github\skin.embuary\temp\Textures.xbt
-18:10:04: Running command:TexturePacker -input D:\github\skin.embuary\temp -output D:\github\skin.embuary\temp\Textures.xbt
-18:10:04: TexturePacker.exe running.
-18:10:09: TexturePacker.exe closed.
-******************Closed by User*****************
+C:\WINDOWS\SysWOW64\msvcp140.dll: 1
+C:\WINDOWS\system32\msvcp140.dll: 1
+C:\WINDOWS\SysWOW64\VCRUNTIME140.dll: 1
+C:\WINDOWS\system32\VCRUNTIME140.dll: 1
+10:14:08: TexturePacker Version: 1.1.1.0
+10:14:08: Update function started.
+10:14:08: No update found!
+10:14:09: Compile Mode started.
+10:14:16: Directory is fine.
+10:14:16: Path to directory: D:\github\skin.embuary-leia\das
+10:14:20: Directory is fine.
+10:14:20: Path to output file: D:\github\skin.embuary-leia\Textures.xbt
+10:14:21: Running command:TexturePacker -input D:\github\skin.embuary-leia\das -output D:\github\skin.embuary-leia\Textures.xbt
+10:14:21: TexturePacker.exe running.
+10:14:28: TexturePacker.exe closed.
