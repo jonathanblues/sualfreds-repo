@@ -17,3 +17,4 @@ C:\WINDOWS\system32\VCRUNTIME140.dll: 1
 14:34:24: Running command:TexturePacker -input E:\media-working-dir -output E:\Textures.xbt
 14:34:24: TexturePacker.exe running.
 14:34:30: TexturePacker.exe closed.
+******************Closed by User*****************
